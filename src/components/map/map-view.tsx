@@ -2,11 +2,12 @@
 
 import "leaflet/dist/leaflet.css";
 
-import { CircleMarker, MapContainer, TileLayer, Tooltip } from "react-leaflet";
+import { CircleMarker, MapContainer, Popup, TileLayer, Tooltip } from "react-leaflet";
 
 import type { Place } from "@/lib/types";
 import { MMR_CENTER, MMR_DEFAULT_ZOOM } from "@/lib/places";
 import { PLACE_TYPE_COLORS } from "@/lib/map";
+import { PinPopup } from "@/components/pins/pin-popup";
 
 interface MapViewProps {
   places: Place[];
@@ -37,6 +38,9 @@ export default function MapView({ places }: MapViewProps) {
           }}
         >
           <Tooltip>{place.name}</Tooltip>
+          <Popup>
+            <PinPopup place={place} />
+          </Popup>
         </CircleMarker>
       ))}
     </MapContainer>
