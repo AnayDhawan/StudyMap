@@ -45,7 +45,3 @@ next-env.d.ts
 /papers/*
 !/papers/.gitkeep
 !/papers/README.md
-
-# pwa generated service worker
-/public/sw.js
-/public/workbox-*.js
