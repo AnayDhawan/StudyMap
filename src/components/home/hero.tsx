@@ -55,7 +55,7 @@ export function Hero() {
           </div>
 
           <p className="mt-6 font-mono text-xs text-muted-foreground">
-            {total} places &middot; 8 categories &middot; 3 cities &middot; 100% open data
+            80+ places &middot; 8 categories &middot; 3 cities &middot; 100% open data
           </p>
 
           <ul className="mt-8 flex flex-wrap gap-x-4 gap-y-2.5">

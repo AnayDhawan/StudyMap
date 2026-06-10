@@ -8,7 +8,7 @@
     "lng": 72.8355,
     "address": "Fort, Mumbai 400001",
     "gmaps_link": "https://maps.google.com/?q=18.9398,72.8355",
-    "added_by": "claude-data-bot"
+    "added_by": "shauryagangrade"
   },
   {
     "id": "mum-train_station-02",
@@ -19,7 +19,7 @@
     "lng": 72.8479,
     "address": "Dadar West, Mumbai 400028",
     "gmaps_link": "https://maps.google.com/?q=19.0176,72.8479",
-    "added_by": "claude-data-bot"
+    "added_by": "shauryagangrade"
   },
   {
     "id": "mum-train_station-03",
@@ -30,7 +30,7 @@
     "lng": 72.8295,
     "address": "Bandra West, Mumbai 400050",
     "gmaps_link": "https://maps.google.com/?q=19.0596,72.8295",
-    "added_by": "claude-data-bot"
+    "added_by": "shauryagangrade"
   },
   {
     "id": "mum-train_station-04",
@@ -41,7 +41,7 @@
     "lng": 72.8468,
     "address": "Andheri East, Mumbai 400072",
     "gmaps_link": "https://maps.google.com/?q=19.1197,72.8468",
-    "added_by": "claude-data-bot"
+    "added_by": "shauryagangrade"
   },
   {
     "id": "mum-train_station-05",
@@ -52,7 +52,7 @@
     "lng": 72.8297,
     "address": "Grant Road, Fort, Mumbai 400004",
     "gmaps_link": "https://maps.google.com/?q=18.9821,72.8297",
-    "added_by": "claude-data-bot"
+    "added_by": "shauryagangrade"
   },
   {
     "id": "mum-train_station-06",
@@ -63,7 +63,7 @@
     "lng": 72.8071,
     "address": "Borivali West, Mumbai 400092",
     "gmaps_link": "https://maps.google.com/?q=19.2286,72.8071",
-    "added_by": "claude-data-bot"
+    "added_by": "shauryagangrade"
   },
   {
     "id": "thn-train_station-01",
@@ -74,7 +74,7 @@
     "lng": 72.9750,
     "address": "Thane West, Thane 400601",
     "gmaps_link": "https://maps.google.com/?q=19.1860,72.9750",
-    "added_by": "claude-data-bot"
+    "added_by": "shauryagangrade"
   },
   {
     "id": "thn-train_station-02",
@@ -85,7 +85,7 @@
     "lng": 72.9602,
     "address": "Kasturba Nagar, Thane 400604",
     "gmaps_link": "https://maps.google.com/?q=19.2185,72.9602",
-    "added_by": "claude-data-bot"
+    "added_by": "shauryagangrade"
   },
   {
     "id": "nvm-train_station-01",
@@ -96,7 +96,7 @@
     "lng": 73.0008,
     "address": "Sector 30A, Vashi, Navi Mumbai 400703",
     "gmaps_link": "https://maps.google.com/?q=19.0653,73.0008",
-    "added_by": "claude-data-bot"
+    "added_by": "shauryagangrade"
   },
   {
     "id": "nvm-train_station-02",
@@ -107,6 +107,6 @@
     "lng": 73.0246,
     "address": "Sector 5, Nerul, Navi Mumbai 400706",
     "gmaps_link": "https://maps.google.com/?q=19.0314,73.0246",
-    "added_by": "claude-data-bot"
+    "added_by": "shauryagangrade"
   }
 ]

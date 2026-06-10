@@ -10,83 +10,48 @@ export const metadata: Metadata = {
 
 export default function TermsPage() {
   return (
-    <LegalPage title="Terms of use" updated="June 2026">
-      <p>
-        By using {site.name}, you agree to these terms. Please read them carefully.
-      </p>
+    <LegalPage title="Terms" updated="June 2026">
+      <p>Keep it simple: contribute real info, don't be abusive, and double-check things yourself.</p>
 
-      <LegalSection heading="What the data is">
+      <LegalSection heading="It's crowdsourced">
         <p>
-          {site.name} is a crowdsourced map of student-relevant places. It contains user-contributed information about exam centres, libraries, bookshops, cafes, and other locations. Data is community-maintained and may be incomplete, outdated, or inaccurate. Always verify with official sources before relying on it for exams, travel, or official business.
+          {site.name} is built by students like you. Data might be outdated, incomplete, or wrong. Always verify with official sources before relying on anything important.
         </p>
       </LegalSection>
 
-      <LegalSection heading="License and reuse">
+      <LegalSection heading="Add real places">
         <p>
-          Place data on {site.name} is released under CC0 (public domain). You are free to use, modify, and distribute it without attribution. Guides, documentation, and code are available under the terms specified in the GitHub repository.
+          Contribute only places you've verified. Include the source (Google Maps link, school website, etc.). All data becomes public domain (CC0)—free for anyone to use.
         </p>
       </LegalSection>
 
-      <LegalSection heading="How contributions work">
+      <LegalSection heading="Be respectful">
         <p>
-          You can contribute new places via GitHub pull requests. Contributions must include a source (e.g., link to Google Maps listing) and should reference verified information. By submitting a contribution, you confirm you have the right to share the information and that it is accurate to the best of your knowledge.
+          No scraping, spam, false info, or harassment. Keep it a welcoming space.
         </p>
       </LegalSection>
 
-      <LegalSection heading="No hosting of copyrighted material">
+      <LegalSection heading="Links to external sites">
         <p>
-          {site.name} does not host past papers, exam solutions, or copyrighted books. It only links to official sources (HBCSE, board websites, etc.). Storing papers locally on your device is your responsibility; we do not provide them.
+          We link to external resources (Google Maps, past papers, portals). We're not responsible for their content or if they break. Check their terms.
         </p>
       </LegalSection>
 
-      <LegalSection heading="Acceptable use">
+      <LegalSection heading="We're not liable for...">
         <p>
-          You agree not to use {site.name} to:
+          ...missed exams, wrong directions, closed places, broken links, or any damage from using the site. Use it at your own risk. Verify everything independently.
         </p>
-        <ul className="ml-4 list-inside list-disc space-y-1 text-foreground/90">
-          <li>Interfere with the service or infrastructure</li>
-          <li>Submit false or misleading information</li>
-          <li>Harass or defame anyone or any organisation</li>
-          <li>Violate anyone's intellectual property rights</li>
-          <li>Use automated tools to scrape or mirror the site (without permission)</li>
-        </ul>
-      </LegalSection>
-
-      <LegalSection heading="Limitation of liability">
-        <p>
-          {site.name} is provided as-is without warranty. The maintainers are not liable for:
-        </p>
-        <ul className="ml-4 list-inside list-disc space-y-1 text-foreground/90">
-          <li>Missed exams or wrong directions from inaccurate pins</li>
-          <li>Closed or relocated places not yet updated</li>
-          <li>Broken links to external resources</li>
-          <li>Lost or corrupted data from private accounts</li>
-          <li>Any damage or loss arising from use of the site</li>
-        </ul>
-        <p className="mt-2">Use {site.name} at your own risk. Verify all critical information independently.</p>
       </LegalSection>
 
       <LegalSection heading="No endorsement">
         <p>
-          Links to external sites do not constitute endorsement. We are not responsible for their content, accuracy, policies, or availability. Read their terms before using them.
+          Listed places and resources are not endorsed. Research independently before using any service.
         </p>
       </LegalSection>
 
-      <LegalSection heading="Modification and discontinuation">
+      <LegalSection heading="This is a student project">
         <p>
-          We may modify or discontinue {site.name} at any time. We will try to give notice, but are not obligated to do so. Your continued use after changes means you accept the new terms.
-        </p>
-      </LegalSection>
-
-      <LegalSection heading="Termination">
-        <p>
-          We may terminate your access if you violate these terms or engage in abusive behavior. You may close your account at any time via the Account page.
-        </p>
-      </LegalSection>
-
-      <LegalSection heading="Governing law">
-        <p>
-          These terms are governed by Indian law. Any disputes will be resolved in the courts of Mumbai, India.
+          No paid staff. No SLA. We'll try to keep it running, but make no promises.
         </p>
       </LegalSection>
     </LegalPage>

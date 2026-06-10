@@ -10,74 +10,60 @@ export const metadata: Metadata = {
 
 export default function PrivacyPage() {
   return (
-    <LegalPage title="Privacy" updated="June 2026">
-      <p>
-        {site.name} is an open-source student project. This privacy notice explains what data we collect, how we use it, and your rights.
-      </p>
+    <LegalPage title="Your Privacy" updated="June 2026">
+      <p>We keep this simple: we collect minimal data and don't track you. Here's what you need to know.</p>
 
-      <LegalSection heading="Data we collect">
+      <LegalSection heading="When you're just browsing">
         <p>
-          <strong>Without an account:</strong> When you browse the map, view resources, or read guides, we collect no personal data. The site sends no identifiers to us. OpenStreetMap (the map provider) may log your IP address per their privacy policy.
-        </p>
-        <p>
-          <strong>When you sign in:</strong> We collect your email address and name from Google. You authorize this via Google's OAuth. We store these against your account to identify and verify you for future sign-ins.
-        </p>
-        <p>
-          <strong>When you add private pins:</strong> We store your place names, coordinates, category, and any notes you add. These are stored in our Supabase database with row-level security; only you can read your pins.
+          No personal data collected. You can use the entire map, resources, and guides without signing in. That's it.
         </p>
       </LegalSection>
 
-      <LegalSection heading="Location services">
+      <LegalSection heading="When you save private places">
         <p>
-          The "Near me" feature asks your browser for your current location. That coordinate is used only to sort places by distance. It stays on your device and is not sent to us or stored anywhere.
+          Sign in with your Google email. We store your place names, locations, and notes. Only you can see them (encrypted with row-level security). We keep them as long as your account exists.
         </p>
       </LegalSection>
 
-      <LegalSection heading="Cookies and tracking">
+      <LegalSection heading="Location (Near me button)">
         <p>
-          We do not use cookies for tracking. We use local browser storage only to remember your theme preference (light or dark mode) and map settings. No analytics, no advertising, no third-party trackers.
+          When you tap "Near me," your phone shares your location just to sort places by distance. It stays on your device—we don't see it or store it.
+        </p>
+      </LegalSection>
+
+      <LegalSection heading="No cookies, no tracking">
+        <p>
+          We don't track you. We remember your light/dark mode preference in your browser. That's it. No ads, no analytics, no profiling.
         </p>
       </LegalSection>
 
       <LegalSection heading="Data security">
         <p>
-          Private pins are protected by row-level security in Supabase. Your authentication token is managed by Google. We do not have access to your Google password. Private data is transmitted over HTTPS (encrypted).
+          Private pins are encrypted. Google handles your password (we never see it). Everything travels over HTTPS.
         </p>
       </LegalSection>
 
-      <LegalSection heading="Data retention">
+      <LegalSection heading="Delete your data anytime">
         <p>
-          Your account and private pins persist until you delete them. Deleting your account removes all your data from our database. We do not retain backups of deleted accounts.
+          Delete your account and all your data disappears. No backups, no archives.
         </p>
       </LegalSection>
 
-      <LegalSection heading="Your rights (GDPR)">
+      <LegalSection heading="Third-party services we use">
         <p>
-          You have the right to access, correct, or delete your personal data. Contact us at the email in the footer to exercise these rights. We will respond within 30 days.
+          <strong>Google:</strong> Handles sign-in. Check their privacy policy if you want details.
+        </p>
+        <p>
+          <strong>Supabase:</strong> Hosts your data. supabase.com/privacy has their policy.
+        </p>
+        <p>
+          <strong>OpenStreetMap:</strong> Provides map tiles. Your browser talks to them.
         </p>
       </LegalSection>
 
-      <LegalSection heading="Third parties">
+      <LegalSection heading="Questions?">
         <p>
-          <strong>Google:</strong> We use Google OAuth for sign-in. Review Google's privacy policy for details on how they handle your data.
-        </p>
-        <p>
-          <strong>Supabase:</strong> We host user data on Supabase. Review their privacy policy at supabase.com/privacy.
-        </p>
-        <p>
-          <strong>OpenStreetMap:</strong> The map tiles come from OpenStreetMap contributors. Your browser connects to them per their privacy policy.
-        </p>
-      </LegalSection>
-
-      <LegalSection heading="Open source">
-        <p>
-          {site.name} is open source at {site.repo}. You can review the code and see exactly what data is collected. If you run your own copy, you control your own database and this notice does not apply.
-        </p>
-      </LegalSection>
-
-      <LegalSection heading="Changes to this notice">
-        <p>
-          We may update this policy. The "updated" date at the top tells you when changes were made. Continued use implies acceptance.
+          Email us. We'll respond within a week. You can also review our code—it's all open source, so you can see exactly what we do.
         </p>
       </LegalSection>
     </LegalPage>

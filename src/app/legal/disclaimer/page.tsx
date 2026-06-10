@@ -10,84 +10,56 @@ export const metadata: Metadata = {
 
 export default function DisclaimerPage() {
   return (
-    <LegalPage title="Disclaimer" updated="June 2026">
+    <LegalPage title="Before You Use StudyMap" updated="June 2026">
       <p>
-        {site.name} is a student-built project with crowdsourced data. This disclaimer outlines what it is not and what you should verify independently.
+        This is a student project with crowdsourced data. Always verify information independently for anything important.
       </p>
 
-      <LegalSection heading="Data accuracy and completeness">
+      <LegalSection heading="Data changes fast">
         <p>
-          {site.name} data is contributed by students and verified against public sources (Google Maps, official websites). However:
+          Places close, move, and change hours. Coordinates might be approximate. New places are added all the time. The map is never 100% current.
         </p>
-        <ul className="ml-4 list-inside list-disc space-y-1 text-foreground/90">
-          <li>Places close, move, or change hours without notice</li>
-          <li>Contact information becomes outdated</li>
-          <li>Coordinates may be approximate</li>
-          <li>New places are added continuously; the map is never complete</li>
-        </ul>
-        <p className="mt-2">
-          <strong>Always verify with official sources before travelling or taking action.</strong> For exams, call the exam centre. For services, visit their official website. For travel, check current operating hours.
+        <p>
+          <strong>For critical stuff (exams, travel, deadlines):</strong> Call ahead, check official websites, verify hours.
         </p>
       </LegalSection>
 
-      <LegalSection heading="Not official advice">
+      <LegalSection heading="We're not official">
         <p>
-          The Student Docs (benefits guides on passports, travel, software) are general information only, not legal advice, not official government guidance, and not formal recommendations. Laws, rules, fees, and processes change frequently. For anything official or binding:
+          The guides (passports, benefits, software) are just tips from students. Not legal advice, not government guidance. Laws change frequently.
         </p>
-        <ul className="ml-4 list-inside list-disc space-y-1 text-foreground/90">
-          <li>Passport: visit passport.gov.in and the official Passport Seva portal</li>
-          <li>Travel: check IRCTC, airline, and state travel guidelines</li>
-          <li>Exams: refer to the official board (HBCSE, CBSE, ICSE) website</li>
-          <li>Student benefits: check official vendor websites directly</li>
-        </ul>
-      </LegalSection>
-
-      <LegalSection heading="Third-party links">
         <p>
-          {site.name} links to external sites for past papers, portals, and resources. We do not control those sites, have no responsibility for their content, and are not liable if they become unavailable, contain errors, or change policies.
+          For official info: Passport Seva, IRCTC, your school's website, official exam boards.
         </p>
       </LegalSection>
 
-      <LegalSection heading="No guarantee of results">
+      <LegalSection heading="Location estimates (Near me)">
         <p>
-          Student testimonials, guides, and strategies on {site.name} reflect individual experiences. Results vary by person, school, and circumstances. Using resources or strategies recommended on this site does not guarantee exam success, admission, or any outcome.
+          GPS estimates can be wrong. Use Google Maps for precise navigation.
         </p>
       </LegalSection>
 
-      <LegalSection heading="Map and location features">
+      <LegalSection heading="External links">
         <p>
-          The "Near me" feature estimates distance using device location. It may be inaccurate due to GPS limitations or network conditions. Do not rely on it for precise navigation; use Google Maps or dedicated navigation apps instead.
+          We link to external sites. We don't control them and aren't responsible if they break or change.
         </p>
       </LegalSection>
 
-      <LegalSection heading="No endorsement">
+      <LegalSection heading="No guarantees">
         <p>
-          Places, websites, and products listed on {site.name} are not endorsed by us. Their inclusion does not mean we recommend them or guarantee their quality. Research independently before using any service or product mentioned.
+          Using this site doesn't guarantee exam success, admission, or any outcome. Results depend on many factors beyond what's here.
         </p>
       </LegalSection>
 
-      <LegalSection heading="Risks you assume">
+      <LegalSection heading="Student project">
         <p>
-          By using {site.name}, you accept these risks:
-        </p>
-        <ul className="ml-4 list-inside list-disc space-y-1 text-foreground/90">
-          <li>Missing exams due to incorrect place information</li>
-          <li>Travelling to wrong locations from inaccurate pins</li>
-          <li>Relying on outdated official information</li>
-          <li>Loss of private data if your account is compromised</li>
-          <li>Service being unavailable when you need it</li>
-        </ul>
-      </LegalSection>
-
-      <LegalSection heading="Student project status">
-        <p>
-          {site.name} is built and maintained by students as a personal project, not a professional organization. There are no paid staff, no dedicated support team, and no SLA (service level agreement). Updates, bug fixes, and new features depend on volunteer effort.
+          No paid staff. No SLA. We maintain this in our spare time. Updates happen when we can.
         </p>
       </LegalSection>
 
-      <LegalSection heading="Use at your own risk">
+      <LegalSection heading="Bottom line">
         <p>
-          {site.name} is provided as-is. The maintainers disclaim all warranties (expressed or implied). They are not liable for any harm, loss, or inconvenience arising from your use of the site, even if they were advised of the possibility.
+          Use StudyMap as a starting point, not the final answer. Verify important things independently. We're not liable if something goes wrong.
         </p>
       </LegalSection>
     </LegalPage>

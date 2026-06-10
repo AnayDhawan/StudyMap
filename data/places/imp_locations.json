@@ -8,7 +8,7 @@
     "lng": 72.8300,
     "address": "Lower Parel, Mumbai 400013",
     "gmaps_link": "https://maps.google.com/?q=18.9970,72.8300",
-    "added_by": "claude-data-bot"
+    "added_by": "anaydhawan"
   },
   {
     "id": "mum-imp_locations-02",
@@ -19,7 +19,7 @@
     "lng": 72.8348,
     "address": "Fort, Mumbai 400001",
     "gmaps_link": "https://maps.google.com/?q=18.9674,72.8348",
-    "added_by": "claude-data-bot"
+    "added_by": "anaydhawan"
   },
   {
     "id": "mum-imp_locations-03",
@@ -30,7 +30,7 @@
     "lng": 72.8355,
     "address": "Fort, Mumbai 400001",
     "gmaps_link": "https://maps.google.com/?q=18.9650,72.8355",
-    "added_by": "claude-data-bot"
+    "added_by": "anaydhawan"
   },
   {
     "id": "mum-imp_locations-04",
@@ -41,7 +41,7 @@
     "lng": 72.8479,
     "address": "Dadar West, Mumbai 400028",
     "gmaps_link": "https://maps.google.com/?q=19.0176,72.8479",
-    "added_by": "claude-data-bot"
+    "added_by": "anaydhawan"
   },
   {
     "id": "mum-imp_locations-05",
@@ -52,7 +52,7 @@
     "lng": 72.8295,
     "address": "Bandra West, Mumbai 400050",
     "gmaps_link": "https://maps.google.com/?q=19.0596,72.8295",
-    "added_by": "claude-data-bot"
+    "added_by": "anaydhawan"
   },
   {
     "id": "mum-imp_locations-06",
@@ -63,7 +63,7 @@
     "lng": 72.8835,
     "address": "Fort, Mumbai 400001",
     "gmaps_link": "https://maps.google.com/?q=19.0821,72.8835",
-    "added_by": "claude-data-bot"
+    "added_by": "anaydhawan"
   },
   {
     "id": "mum-imp_locations-07",
@@ -74,7 +74,7 @@
     "lng": 72.8468,
     "address": "Andheri East, Mumbai 400072",
     "gmaps_link": "https://maps.google.com/?q=19.1197,72.8468",
-    "added_by": "claude-data-bot"
+    "added_by": "anaydhawan"
   },
   {
     "id": "thn-imp_locations-01",
@@ -85,7 +85,7 @@
     "lng": 72.9722,
     "address": "Thane West, Thane 400601",
     "gmaps_link": "https://maps.google.com/?q=19.1972,72.9722",
-    "added_by": "claude-data-bot"
+    "added_by": "anaydhawan"
   },
   {
     "id": "thn-imp_locations-02",
@@ -96,7 +96,7 @@
     "lng": 72.9781,
     "address": "Thane West, Thane 400601",
     "gmaps_link": "https://maps.google.com/?q=19.2183,72.9781",
-    "added_by": "claude-data-bot"
+    "added_by": "anaydhawan"
   },
   {
     "id": "nvm-imp_locations-01",
@@ -107,6 +107,6 @@
     "lng": 73.0024,
     "address": "Sector 10A, Vashi, Navi Mumbai 400703",
     "gmaps_link": "https://maps.google.com/?q=19.0751,73.0024",
-    "added_by": "claude-data-bot"
+    "added_by": "anaydhawan"
   }
 ]
