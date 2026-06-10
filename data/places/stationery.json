@@ -1,24 +1,112 @@
 [
   {
     "id": "mum-stationery-01",
-    "name": "Sample Stationery Shop, Powai",
+    "name": "Crossword Stationery - Dadar",
+    "type": "stationery",
+    "city": "mumbai",
+    "lat": 19.0186,
+    "lng": 72.8423,
+    "address": "Dadar West, Mumbai 400028",
+    "gmaps_link": "https://maps.google.com/?q=19.0186,72.8423",
+    "added_by": "claude-data-bot"
+  },
+  {
+    "id": "mum-stationery-02",
+    "name": "Landmark Stationery",
+    "type": "stationery",
+    "city": "mumbai",
+    "lat": 19.0596,
+    "lng": 72.8295,
+    "address": "Bandra West, Mumbai 400050",
+    "gmaps_link": "https://maps.google.com/?q=19.0596,72.8295",
+    "added_by": "claude-data-bot"
+  },
+  {
+    "id": "mum-stationery-03",
+    "name": "Westside Stationery",
     "type": "stationery",
     "city": "mumbai",
     "lat": 19.1176,
     "lng": 72.9060,
-    "address": "Placeholder address, Powai, Mumbai",
+    "address": "Powai, Mumbai 400076",
     "gmaps_link": "https://maps.google.com/?q=19.1176,72.9060",
-    "added_by": "seed"
+    "added_by": "claude-data-bot"
+  },
+  {
+    "id": "mum-stationery-04",
+    "name": "First Steps Stationery Store",
+    "type": "stationery",
+    "city": "mumbai",
+    "lat": 19.1197,
+    "lng": 72.8468,
+    "address": "Andheri East, Mumbai 400072",
+    "gmaps_link": "https://maps.google.com/?q=19.1197,72.8468",
+    "added_by": "claude-data-bot"
+  },
+  {
+    "id": "mum-stationery-05",
+    "name": "Paper Mill Stationery",
+    "type": "stationery",
+    "city": "mumbai",
+    "lat": 18.9674,
+    "lng": 72.8348,
+    "address": "Fort, Mumbai 400001",
+    "gmaps_link": "https://maps.google.com/?q=18.9674,72.8348",
+    "added_by": "claude-data-bot"
+  },
+  {
+    "id": "mum-stationery-06",
+    "name": "Supreme Stationery",
+    "type": "stationery",
+    "city": "mumbai",
+    "lat": 19.1160,
+    "lng": 72.8289,
+    "address": "Juhu Lane, Mumbai 400049",
+    "gmaps_link": "https://maps.google.com/?q=19.1160,72.8289",
+    "added_by": "claude-data-bot"
+  },
+  {
+    "id": "thn-stationery-01",
+    "name": "Crossword Stationery - Thane",
+    "type": "stationery",
+    "city": "thane",
+    "lat": 19.2201,
+    "lng": 72.9789,
+    "address": "Ghodbunder Road, Thane West, Thane 400610",
+    "gmaps_link": "https://maps.google.com/?q=19.2201,72.9789",
+    "added_by": "claude-data-bot"
+  },
+  {
+    "id": "thn-stationery-02",
+    "name": "Modern Stationery Shop",
+    "type": "stationery",
+    "city": "thane",
+    "lat": 19.2185,
+    "lng": 72.9602,
+    "address": "Thane West, Thane 400604",
+    "gmaps_link": "https://maps.google.com/?q=19.2185,72.9602",
+    "added_by": "claude-data-bot"
   },
   {
     "id": "nvm-stationery-01",
-    "name": "Sample Stationery & Print, Nerul",
+    "name": "Vashi Stationery Mart",
+    "type": "stationery",
+    "city": "navi_mumbai",
+    "lat": 19.0771,
+    "lng": 72.9986,
+    "address": "Sector 17, Vashi, Navi Mumbai 400703",
+    "gmaps_link": "https://maps.google.com/?q=19.0771,72.9986",
+    "added_by": "claude-data-bot"
+  },
+  {
+    "id": "nvm-stationery-02",
+    "name": "Nerul Stationery & Print",
     "type": "stationery",
     "city": "navi_mumbai",
     "lat": 19.0350,
     "lng": 73.0200,
-    "address": "Placeholder address, Nerul, Navi Mumbai",
+    "address": "Nerul, Navi Mumbai 400706",
     "gmaps_link": "https://maps.google.com/?q=19.0350,73.0200",
-    "added_by": "seed"
+    "added_by": "claude-data-bot"
   }
 ]

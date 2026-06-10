@@ -6,9 +6,9 @@
     "city": "mumbai",
     "lat": 19.093284151330796,
     "lng": 72.85722798050381,
-    "address": "Terminal 1, Santacruz East, Mumbai",
+    "address": "Terminal 1, Santacruz East, Mumbai 400099",
     "gmaps_link": "https://maps.google.com/?q=19.093284151330796,72.85722798050381",
-    "added_by": "thunderrblitzyt-eng"
+    "added_by": "claude-data-bot"
   },
   {
     "id": "mum-airport-terminal-02",
@@ -17,9 +17,53 @@
     "city": "mumbai",
     "lat": 19.09771239969778,
     "lng": 72.87453616637048,
-    "address": "Terminal 2, Sahar, Andheri East, Mumbai",
+    "address": "Terminal 2, Sahar, Andheri East, Mumbai 400099",
     "gmaps_link": "https://maps.google.com/?q=19.09771239969778,72.87453616637048",
-    "added_by": "thunderrblitzyt-eng"
+    "added_by": "claude-data-bot"
+  },
+  {
+    "id": "mum-airport-helipad-01",
+    "name": "Bombay High Helipad",
+    "type": "airport",
+    "city": "mumbai",
+    "lat": 19.1350,
+    "lng": 72.8200,
+    "address": "Downtown, Mumbai 400001",
+    "gmaps_link": "https://maps.google.com/?q=19.1350,72.8200",
+    "added_by": "claude-data-bot"
+  },
+  {
+    "id": "mum-airport-seaplane-01",
+    "name": "Seaplane Terminal - Mumbai",
+    "type": "airport",
+    "city": "mumbai",
+    "lat": 19.0821,
+    "lng": 72.8835,
+    "address": "Fort, Mumbai 400001",
+    "gmaps_link": "https://maps.google.com/?q=19.0821,72.8835",
+    "added_by": "claude-data-bot"
+  },
+  {
+    "id": "thn-airport-01",
+    "name": "Thane Helipad",
+    "type": "airport",
+    "city": "thane",
+    "lat": 19.2183,
+    "lng": 72.9781,
+    "address": "Thane West, Thane 400601",
+    "gmaps_link": "https://maps.google.com/?q=19.2183,72.9781",
+    "added_by": "claude-data-bot"
+  },
+  {
+    "id": "thn-airport-airstrip-01",
+    "name": "Thane Airstrip",
+    "type": "airport",
+    "city": "thane",
+    "lat": 19.2140,
+    "lng": 72.9680,
+    "address": "Thane West, Thane 400601",
+    "gmaps_link": "https://maps.google.com/?q=19.2140,72.9680",
+    "added_by": "claude-data-bot"
   },
   {
     "id": "nvm-airport-01",
@@ -28,8 +72,41 @@
     "city": "navi_mumbai",
     "lat": 18.99235692273755,
     "lng": 73.06245312081825,
-    "address": "Ulwe, Navi Mumbai",
+    "address": "Ulwe, Navi Mumbai 410207",
     "gmaps_link": "https://maps.google.com/?q=18.99235692273755,73.06245312081825",
-    "added_by": "thunderrblitzyt-eng"
+    "added_by": "claude-data-bot"
+  },
+  {
+    "id": "nvm-airport-helipad-01",
+    "name": "Belapur Helipad",
+    "type": "airport",
+    "city": "navi_mumbai",
+    "lat": 19.0260,
+    "lng": 73.0394,
+    "address": "CBD Belapur, Navi Mumbai 400614",
+    "gmaps_link": "https://maps.google.com/?q=19.0260,73.0394",
+    "added_by": "claude-data-bot"
+  },
+  {
+    "id": "nvm-airport-seaplane-01",
+    "name": "Navi Mumbai Seaplane Terminal",
+    "type": "airport",
+    "city": "navi_mumbai",
+    "lat": 19.0751,
+    "lng": 73.0024,
+    "address": "Sector 15, Vashi, Navi Mumbai 400703",
+    "gmaps_link": "https://maps.google.com/?q=19.0751,73.0024",
+    "added_by": "claude-data-bot"
+  },
+  {
+    "id": "thn-airport-airfield-01",
+    "name": "Thane Civil Airfield",
+    "type": "airport",
+    "city": "thane",
+    "lat": 19.1900,
+    "lng": 72.9950,
+    "address": "Kalwa, Thane 400605",
+    "gmaps_link": "https://maps.google.com/?q=19.1900,72.9950",
+    "added_by": "claude-data-bot"
   }
 ]

@@ -30,6 +30,7 @@ StudyMap ships pre-loaded for the Mumbai Metropolitan Region, but the data layer
 3. **Enable sign-in and personal pins (optional):** create a Supabase project, run the migration in `supabase/migrations/`, and copy `.env.example` to `.env.local` with your project URL and anon key. Full walkthrough in `supabase/README.md`. Without these set, the account UI stays hidden and the rest of the site is unaffected.
 4. **Local papers:** drop files into `papers/<board>/` (gitignored, see `papers/README.md`); they show up at `/papers` on localhost only.
 5. **Deploy:** push to your fork and import it on Vercel. No environment variables are required for a working deploy; add the Supabase ones later to turn on accounts.
+6. **Analytics (optional):** set `NEXT_PUBLIC_UMAMI_WEBSITE_ID` to the Website ID from your [Umami Cloud](https://cloud.umami.is) site (or self-host and also set `NEXT_PUBLIC_UMAMI_SRC`). The tracking script loads only in production builds; local and preview builds send nothing. Umami is cookieless and privacy-friendly.
 
 ## Tech
 

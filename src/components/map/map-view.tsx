@@ -24,6 +24,10 @@ interface MapViewProps {
   personalPins?: PersonalPin[];
   userLocation?: LatLng | null;
   focusId?: string | null;
+  /** When false, the map is a static preview: no pan, zoom, or controls. */
+  interactive?: boolean;
+  /** Initial zoom level; falls back to the MMR default. */
+  zoom?: number;
 }
 
 /** Eases the map to a coordinate when it changes. */
@@ -67,6 +71,8 @@ export default function MapView({
   personalPins = [],
   userLocation,
   focusId,
+  interactive = true,
+  zoom = MMR_DEFAULT_ZOOM,
 }: MapViewProps) {
   const focusPlace = focusId
     ? places.find((place) => place.id === focusId)
@@ -75,8 +81,14 @@ export default function MapView({
   return (
     <MapContainer
       center={MMR_CENTER}
-      zoom={MMR_DEFAULT_ZOOM}
-      scrollWheelZoom
+      zoom={zoom}
+      scrollWheelZoom={interactive}
+      dragging={interactive}
+      doubleClickZoom={interactive}
+      touchZoom={interactive}
+      keyboard={interactive}
+      zoomControl={interactive}
+      attributionControl={interactive}
       className="size-full"
     >
       <TileLayer

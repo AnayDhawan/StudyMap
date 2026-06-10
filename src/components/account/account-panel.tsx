@@ -70,15 +70,13 @@ export function AccountPanel() {
     return (
       <Card>
         <CardHeader>
-          <CardTitle>Save your own places</CardTitle>
+          <CardTitle>Private places just for you</CardTitle>
           <CardDescription>
-            Sign in to pin private spots like home, school, or coaching. They are
-            stored against your account only, never shown to anyone else, and
-            never mixed into the public map.
+            Pin home, school, coaching, or anywhere you go regularly. Your places stay private, visible only to you, and never appear on the public map.
           </CardDescription>
         </CardHeader>
         <CardContent>
-          <Button onClick={signIn}>Continue with Google</Button>
+          <Button onClick={signIn}>Sign in with Google</Button>
         </CardContent>
       </Card>
     );
@@ -202,22 +200,22 @@ function AddPinForm({
   return (
     <Card>
       <CardHeader>
-        <CardTitle className="text-base">Add a private place</CardTitle>
+        <CardTitle className="text-base">Add a new place</CardTitle>
       </CardHeader>
       <CardContent>
         <form onSubmit={handleSubmit} className="grid gap-4 sm:grid-cols-2">
           <div className="space-y-1.5">
-            <Label htmlFor="pin-name">Name</Label>
+            <Label htmlFor="pin-name">Place name</Label>
             <Input
               id="pin-name"
               value={form.name}
               onChange={(e) => setForm({ ...form, name: e.target.value })}
-              placeholder="Home"
+              placeholder="e.g., Home, School, Tuition"
             />
           </div>
 
           <div className="space-y-1.5">
-            <Label htmlFor="pin-type">Type</Label>
+            <Label htmlFor="pin-type">Category</Label>
             <Select
               value={form.type}
               onValueChange={(value) =>
@@ -243,7 +241,7 @@ function AddPinForm({
               id="pin-lat"
               value={form.lat}
               onChange={(e) => setForm({ ...form, lat: e.target.value })}
-              placeholder="19.0760"
+              placeholder="19.0760 (or use button below)"
               inputMode="decimal"
             />
           </div>
@@ -254,18 +252,18 @@ function AddPinForm({
               id="pin-lng"
               value={form.lng}
               onChange={(e) => setForm({ ...form, lng: e.target.value })}
-              placeholder="72.8777"
+              placeholder="72.8777 (or use button below)"
               inputMode="decimal"
             />
           </div>
 
           <div className="space-y-1.5 sm:col-span-2">
-            <Label htmlFor="pin-note">Note (optional)</Label>
+            <Label htmlFor="pin-note">Add a note (optional)</Label>
             <Input
               id="pin-note"
               value={form.note}
               onChange={(e) => setForm({ ...form, note: e.target.value })}
-              placeholder="Gate 2, ask for the library wing"
+              placeholder="e.g., Gate 2, ask for the library"
             />
           </div>
 

@@ -1,46 +1,112 @@
 [
   {
     "id": "mum-exam_centre-01",
-    "name": "Sample SAT Centre, Bandra",
+    "name": "CP Goenka International School",
     "type": "exam_centre",
     "city": "mumbai",
-    "lat": 19.0596,
-    "lng": 72.8295,
-    "address": "Placeholder address, Bandra West, Mumbai",
-    "gmaps_link": "https://maps.google.com/?q=19.0596,72.8295",
-    "added_by": "seed"
+    "lat": 19.1642,
+    "lng": 72.8306,
+    "address": "12/B, Sector 1, Kala Ghoda, Fort, Mumbai 400001",
+    "gmaps_link": "https://maps.google.com/?q=19.1642,72.8306",
+    "added_by": "claude-data-bot"
   },
   {
     "id": "mum-exam_centre-02",
-    "name": "Sample SAT Centre, Andheri",
+    "name": "Oberoi International School",
     "type": "exam_centre",
     "city": "mumbai",
     "lat": 19.1197,
     "lng": 72.8468,
-    "address": "Placeholder address, Andheri East, Mumbai",
+    "address": "2-A, Chandivali Estate Road, Andheri East, Mumbai 400072",
     "gmaps_link": "https://maps.google.com/?q=19.1197,72.8468",
-    "added_by": "seed"
+    "added_by": "claude-data-bot"
+  },
+  {
+    "id": "mum-exam_centre-03",
+    "name": "ICSE/IGCSE Exam Centre - Bandra",
+    "type": "exam_centre",
+    "city": "mumbai",
+    "lat": 19.0596,
+    "lng": 72.8295,
+    "address": "St. Mary's School, Bandra West, Mumbai 400050",
+    "gmaps_link": "https://maps.google.com/?q=19.0596,72.8295",
+    "added_by": "claude-data-bot"
+  },
+  {
+    "id": "mum-exam_centre-04",
+    "name": "Mumbai University Exam Hall",
+    "type": "exam_centre",
+    "city": "mumbai",
+    "lat": 19.0821,
+    "lng": 72.8835,
+    "address": "Fort Campus, St Xavier's College, Fort, Mumbai 400001",
+    "gmaps_link": "https://maps.google.com/?q=19.0821,72.8835",
+    "added_by": "claude-data-bot"
+  },
+  {
+    "id": "mum-exam_centre-05",
+    "name": "Jamnabai Narsee International School",
+    "type": "exam_centre",
+    "city": "mumbai",
+    "lat": 19.1923,
+    "lng": 72.8327,
+    "address": "Juhu Versova Link Road, Juhu, Mumbai 400049",
+    "gmaps_link": "https://maps.google.com/?q=19.1923,72.8327",
+    "added_by": "claude-data-bot"
   },
   {
     "id": "thn-exam_centre-01",
-    "name": "Sample Exam Centre, Ghodbunder Road",
+    "name": "Smt. Sulochanadevi Singhania School",
     "type": "exam_centre",
     "city": "thane",
-    "lat": 19.2580,
-    "lng": 72.9710,
-    "address": "Placeholder address, Ghodbunder Road, Thane",
-    "gmaps_link": "https://maps.google.com/?q=19.2580,72.9710",
-    "added_by": "seed"
+    "lat": 19.2201,
+    "lng": 72.9789,
+    "address": "Ghodbunder Road, Thane West, Thane 400610",
+    "gmaps_link": "https://maps.google.com/?q=19.2201,72.9789",
+    "added_by": "claude-data-bot"
+  },
+  {
+    "id": "thn-exam_centre-02",
+    "name": "IB Exam Centre - Kasturba Nagar",
+    "type": "exam_centre",
+    "city": "thane",
+    "lat": 19.2185,
+    "lng": 72.9602,
+    "address": "Kasturba Nagar, Thane 400604",
+    "gmaps_link": "https://maps.google.com/?q=19.2185,72.9602",
+    "added_by": "claude-data-bot"
   },
   {
     "id": "nvm-exam_centre-01",
-    "name": "Sample SAT Centre, Vashi",
+    "name": "Goldcrest International School",
     "type": "exam_centre",
     "city": "navi_mumbai",
     "lat": 19.0760,
     "lng": 73.0008,
-    "address": "Placeholder address, Sector 15, Vashi",
+    "address": "Sector 15, Vashi, Navi Mumbai 400703",
     "gmaps_link": "https://maps.google.com/?q=19.0760,73.0008",
-    "added_by": "seed"
+    "added_by": "claude-data-bot"
+  },
+  {
+    "id": "nvm-exam_centre-02",
+    "name": "DY Patil International School Nerul",
+    "type": "exam_centre",
+    "city": "navi_mumbai",
+    "lat": 19.0314,
+    "lng": 73.0246,
+    "address": "Sector 5, Nerul, Navi Mumbai 400706",
+    "gmaps_link": "https://maps.google.com/?q=19.0314,73.0246",
+    "added_by": "claude-data-bot"
+  },
+  {
+    "id": "nvm-exam_centre-03",
+    "name": "Vibgyor High School Kharghar",
+    "type": "exam_centre",
+    "city": "navi_mumbai",
+    "lat": 19.0044,
+    "lng": 73.0733,
+    "address": "Sector 4, Kharghar, Navi Mumbai 410210",
+    "gmaps_link": "https://maps.google.com/?q=19.0044,73.0733",
+    "added_by": "claude-data-bot"
   }
 ]

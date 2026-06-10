@@ -1,14 +1,69 @@
 [
   {
     "id": "mum-train_station-01",
-    "name": "Chhatrapati Shivaji Maharaj Terminus",
+    "name": "Chhatrapati Shivaji Maharaj Terminus (CSMT)",
     "type": "train_station",
     "city": "mumbai",
     "lat": 18.9398,
     "lng": 72.8355,
-    "address": "Fort, Mumbai",
+    "address": "Fort, Mumbai 400001",
     "gmaps_link": "https://maps.google.com/?q=18.9398,72.8355",
-    "added_by": "seed"
+    "added_by": "claude-data-bot"
+  },
+  {
+    "id": "mum-train_station-02",
+    "name": "Dadar Railway Station",
+    "type": "train_station",
+    "city": "mumbai",
+    "lat": 19.0176,
+    "lng": 72.8479,
+    "address": "Dadar West, Mumbai 400028",
+    "gmaps_link": "https://maps.google.com/?q=19.0176,72.8479",
+    "added_by": "claude-data-bot"
+  },
+  {
+    "id": "mum-train_station-03",
+    "name": "Bandra Railway Station",
+    "type": "train_station",
+    "city": "mumbai",
+    "lat": 19.0596,
+    "lng": 72.8295,
+    "address": "Bandra West, Mumbai 400050",
+    "gmaps_link": "https://maps.google.com/?q=19.0596,72.8295",
+    "added_by": "claude-data-bot"
+  },
+  {
+    "id": "mum-train_station-04",
+    "name": "Andheri Railway Station",
+    "type": "train_station",
+    "city": "mumbai",
+    "lat": 19.1197,
+    "lng": 72.8468,
+    "address": "Andheri East, Mumbai 400072",
+    "gmaps_link": "https://maps.google.com/?q=19.1197,72.8468",
+    "added_by": "claude-data-bot"
+  },
+  {
+    "id": "mum-train_station-05",
+    "name": "Grant Road Railway Station",
+    "type": "train_station",
+    "city": "mumbai",
+    "lat": 18.9821,
+    "lng": 72.8297,
+    "address": "Grant Road, Fort, Mumbai 400004",
+    "gmaps_link": "https://maps.google.com/?q=18.9821,72.8297",
+    "added_by": "claude-data-bot"
+  },
+  {
+    "id": "mum-train_station-06",
+    "name": "Borivali Railway Station",
+    "type": "train_station",
+    "city": "mumbai",
+    "lat": 19.2286,
+    "lng": 72.8071,
+    "address": "Borivali West, Mumbai 400092",
+    "gmaps_link": "https://maps.google.com/?q=19.2286,72.8071",
+    "added_by": "claude-data-bot"
   },
   {
     "id": "thn-train_station-01",
@@ -17,9 +72,20 @@
     "city": "thane",
     "lat": 19.1860,
     "lng": 72.9750,
-    "address": "Thane West",
+    "address": "Thane West, Thane 400601",
     "gmaps_link": "https://maps.google.com/?q=19.1860,72.9750",
-    "added_by": "seed"
+    "added_by": "claude-data-bot"
+  },
+  {
+    "id": "thn-train_station-02",
+    "name": "Kasara Railway Station",
+    "type": "train_station",
+    "city": "thane",
+    "lat": 19.2185,
+    "lng": 72.9602,
+    "address": "Kasturba Nagar, Thane 400604",
+    "gmaps_link": "https://maps.google.com/?q=19.2185,72.9602",
+    "added_by": "claude-data-bot"
   },
   {
     "id": "nvm-train_station-01",
@@ -28,8 +94,19 @@
     "city": "navi_mumbai",
     "lat": 19.0653,
     "lng": 73.0008,
-    "address": "Sector 30A, Vashi, Navi Mumbai",
+    "address": "Sector 30A, Vashi, Navi Mumbai 400703",
     "gmaps_link": "https://maps.google.com/?q=19.0653,73.0008",
-    "added_by": "seed"
+    "added_by": "claude-data-bot"
+  },
+  {
+    "id": "nvm-train_station-02",
+    "name": "Nerul Railway Station",
+    "type": "train_station",
+    "city": "navi_mumbai",
+    "lat": 19.0314,
+    "lng": 73.0246,
+    "address": "Sector 5, Nerul, Navi Mumbai 400706",
+    "gmaps_link": "https://maps.google.com/?q=19.0314,73.0246",
+    "added_by": "claude-data-bot"
   }
 ]

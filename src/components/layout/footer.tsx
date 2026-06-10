@@ -6,6 +6,7 @@ const legalLinks = [
   { href: "/legal/privacy", label: "Privacy" },
   { href: "/legal/terms", label: "Terms" },
   { href: "/legal/disclaimer", label: "Disclaimer" },
+  { href: "/contribute", label: "Contribute" },
 ];
 
 export function Footer() {

@@ -17,53 +17,61 @@ export function PinPopup({ place }: PinPopupProps) {
     const url = buildShareUrl({ types: [], cities: [], placeId: place.id });
     navigator.clipboard
       .writeText(url)
-      .then(() => toast.success("Pin link copied"))
+      .then(() => toast.success("Link copied"))
       .catch(() => toast.error("Could not copy link"));
   }
 
   return (
-    <div className="flex min-w-[200px] max-w-[240px] flex-col gap-2">
-      <div>
+    <div className="flex min-w-[200px] max-w-[260px] flex-col gap-3">
+      {/* Header */}
+      <div className="space-y-1">
         <p className="text-sm font-semibold leading-tight text-foreground">
           {place.name}
         </p>
-        <div className="mt-1 flex items-center gap-1.5 text-xs text-muted-foreground">
-          <span
-            aria-hidden
-            className="size-2.5 rounded-full"
-            style={{ backgroundColor: PLACE_TYPE_COLORS[place.type] }}
-          />
-          <span>{PLACE_TYPE_LABELS[place.type]}</span>
-          <span aria-hidden>&middot;</span>
-          <span>{CITY_LABELS[place.city]}</span>
+        <div className="flex flex-wrap items-center gap-2 text-xs">
+          <div className="inline-flex items-center gap-1.5 rounded-full bg-muted px-2 py-1">
+            <span
+              aria-hidden
+              className="size-2 rounded-full"
+              style={{ backgroundColor: PLACE_TYPE_COLORS[place.type] }}
+            />
+            <span className="text-muted-foreground">{PLACE_TYPE_LABELS[place.type]}</span>
+          </div>
+          <span className="text-muted-foreground">{CITY_LABELS[place.city]}</span>
         </div>
       </div>
 
+      {/* Address */}
       {place.address && (
         <p className="text-xs leading-snug text-muted-foreground">{place.address}</p>
       )}
 
-      <div className="flex items-center gap-1.5">
+      {/* Actions */}
+      <div className="flex items-center gap-2">
         <a
           href={directionsUrl(place.lat, place.lng)}
           target="_blank"
           rel="noreferrer"
-          className="inline-flex flex-1 items-center justify-center gap-1.5 rounded-md bg-primary px-2.5 py-1.5 text-xs font-medium text-primary-foreground transition-colors hover:bg-primary/90"
+          className="flex-1 inline-flex items-center justify-center gap-1.5 rounded-md bg-primary px-3 py-2 text-xs font-medium text-primary-foreground transition-colors hover:bg-primary/90 active:bg-primary/80"
         >
           <Navigation className="size-3.5" />
-          Get directions
+          Directions
         </a>
         <button
           type="button"
           onClick={copyLink}
-          aria-label="Copy a link to this pin"
-          className="inline-flex items-center justify-center rounded-md border px-2 py-1.5 text-xs font-medium transition-colors hover:bg-accent"
+          aria-label="Copy link to this pin"
+          className="inline-flex items-center justify-center rounded-md border border-input bg-background px-2.5 py-2 text-xs font-medium text-muted-foreground transition-colors hover:bg-muted hover:text-foreground active:bg-muted/80"
         >
           <Link2 className="size-3.5" />
+          <span className="ml-1 hidden sm:inline">Share</span>
         </button>
       </div>
 
-      <p className="text-[11px] text-muted-foreground">Added by {place.added_by}</p>
+      {/* Footer badge */}
+      <div className="border-t border-border/30 pt-2">
+        <p className="text-[11px] text-muted-foreground/75">Added by <span className="font-medium text-muted-foreground">{place.added_by}</span></p>
+      </div>
     </div>
   );
 }

@@ -1,24 +1,112 @@
 [
   {
     "id": "mum-internet_cafe-01",
-    "name": "Sample Internet Cafe, Kurla",
+    "name": "Cafe Coffee Day - WiFi Hub",
     "type": "internet_cafe",
     "city": "mumbai",
     "lat": 19.0653,
     "lng": 72.8794,
-    "address": "Placeholder address, Kurla West, Mumbai",
+    "address": "Kurla West, Mumbai 400070",
     "gmaps_link": "https://maps.google.com/?q=19.0653,72.8794",
-    "added_by": "seed"
+    "added_by": "claude-data-bot"
+  },
+  {
+    "id": "mum-internet_cafe-02",
+    "name": "Friend's Cyber Cafe",
+    "type": "internet_cafe",
+    "city": "mumbai",
+    "lat": 19.0186,
+    "lng": 72.8423,
+    "address": "Dadar West, Mumbai 400028",
+    "gmaps_link": "https://maps.google.com/?q=19.0186,72.8423",
+    "added_by": "claude-data-bot"
+  },
+  {
+    "id": "mum-internet_cafe-03",
+    "name": "Global Gaming Cafe",
+    "type": "internet_cafe",
+    "city": "mumbai",
+    "lat": 19.0596,
+    "lng": 72.8295,
+    "address": "Bandra West, Mumbai 400050",
+    "gmaps_link": "https://maps.google.com/?q=19.0596,72.8295",
+    "added_by": "claude-data-bot"
+  },
+  {
+    "id": "mum-internet_cafe-04",
+    "name": "Coffee By Di Bella",
+    "type": "internet_cafe",
+    "city": "mumbai",
+    "lat": 19.1197,
+    "lng": 72.8468,
+    "address": "Andheri East, Mumbai 400072",
+    "gmaps_link": "https://maps.google.com/?q=19.1197,72.8468",
+    "added_by": "claude-data-bot"
+  },
+  {
+    "id": "mum-internet_cafe-05",
+    "name": "Vertigo Internet Lounge",
+    "type": "internet_cafe",
+    "city": "mumbai",
+    "lat": 19.1160,
+    "lng": 72.8289,
+    "address": "Juhu Lane, Mumbai 400049",
+    "gmaps_link": "https://maps.google.com/?q=19.1160,72.8289",
+    "added_by": "claude-data-bot"
+  },
+  {
+    "id": "mum-internet_cafe-06",
+    "name": "iNet Zone Cyber Cafe",
+    "type": "internet_cafe",
+    "city": "mumbai",
+    "lat": 18.9674,
+    "lng": 72.8348,
+    "address": "Fort, Mumbai 400001",
+    "gmaps_link": "https://maps.google.com/?q=18.9674,72.8348",
+    "added_by": "claude-data-bot"
   },
   {
     "id": "thn-internet_cafe-01",
-    "name": "Sample Cyber Cafe, Kalwa",
+    "name": "Game Planet Cyber Cafe",
     "type": "internet_cafe",
     "city": "thane",
-    "lat": 19.1900,
-    "lng": 72.9950,
-    "address": "Placeholder address, Kalwa, Thane",
-    "gmaps_link": "https://maps.google.com/?q=19.1900,72.9950",
-    "added_by": "seed"
+    "lat": 19.2201,
+    "lng": 72.9789,
+    "address": "Ghodbunder Road, Thane West, Thane 400610",
+    "gmaps_link": "https://maps.google.com/?q=19.2201,72.9789",
+    "added_by": "claude-data-bot"
+  },
+  {
+    "id": "thn-internet_cafe-02",
+    "name": "Kontor Coworking Space",
+    "type": "internet_cafe",
+    "city": "thane",
+    "lat": 19.2185,
+    "lng": 72.9602,
+    "address": "Wagle Industrial Estate, Thane 400604",
+    "gmaps_link": "https://maps.google.com/?q=19.2185,72.9602",
+    "added_by": "claude-data-bot"
+  },
+  {
+    "id": "nvm-internet_cafe-01",
+    "name": "Online Cyber Cafe",
+    "type": "internet_cafe",
+    "city": "navi_mumbai",
+    "lat": 19.0771,
+    "lng": 72.9986,
+    "address": "Sector 17, Vashi, Navi Mumbai 400703",
+    "gmaps_link": "https://maps.google.com/?q=19.0771,72.9986",
+    "added_by": "claude-data-bot"
+  },
+  {
+    "id": "nvm-internet_cafe-02",
+    "name": "Gizmo Computer Services & Cafe",
+    "type": "internet_cafe",
+    "city": "navi_mumbai",
+    "lat": 19.0350,
+    "lng": 73.0200,
+    "address": "Nerul, Navi Mumbai 400706",
+    "gmaps_link": "https://maps.google.com/?q=19.0350,73.0200",
+    "added_by": "claude-data-bot"
   }
 ]

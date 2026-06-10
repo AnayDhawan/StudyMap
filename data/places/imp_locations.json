@@ -1,24 +1,112 @@
 [
   {
     "id": "mum-imp_locations-01",
-    "name": "Sample Passport Seva Kendra, Lower Parel",
+    "name": "Passport Seva Kendra - Lower Parel",
     "type": "imp_locations",
     "city": "mumbai",
     "lat": 18.9970,
     "lng": 72.8300,
-    "address": "Placeholder address, Lower Parel, Mumbai",
+    "address": "Lower Parel, Mumbai 400013",
     "gmaps_link": "https://maps.google.com/?q=18.9970,72.8300",
-    "added_by": "seed"
+    "added_by": "claude-data-bot"
+  },
+  {
+    "id": "mum-imp_locations-02",
+    "name": "St Xavier's College (Exam Hall)",
+    "type": "imp_locations",
+    "city": "mumbai",
+    "lat": 18.9674,
+    "lng": 72.8348,
+    "address": "Fort, Mumbai 400001",
+    "gmaps_link": "https://maps.google.com/?q=18.9674,72.8348",
+    "added_by": "claude-data-bot"
+  },
+  {
+    "id": "mum-imp_locations-03",
+    "name": "Central Post Office - Fort",
+    "type": "imp_locations",
+    "city": "mumbai",
+    "lat": 18.9650,
+    "lng": 72.8355,
+    "address": "Fort, Mumbai 400001",
+    "gmaps_link": "https://maps.google.com/?q=18.9650,72.8355",
+    "added_by": "claude-data-bot"
+  },
+  {
+    "id": "mum-imp_locations-04",
+    "name": "HDFC Bank - Dadar",
+    "type": "imp_locations",
+    "city": "mumbai",
+    "lat": 19.0176,
+    "lng": 72.8479,
+    "address": "Dadar West, Mumbai 400028",
+    "gmaps_link": "https://maps.google.com/?q=19.0176,72.8479",
+    "added_by": "claude-data-bot"
+  },
+  {
+    "id": "mum-imp_locations-05",
+    "name": "Lilavati Hospital",
+    "type": "imp_locations",
+    "city": "mumbai",
+    "lat": 19.0596,
+    "lng": 72.8295,
+    "address": "Bandra West, Mumbai 400050",
+    "gmaps_link": "https://maps.google.com/?q=19.0596,72.8295",
+    "added_by": "claude-data-bot"
+  },
+  {
+    "id": "mum-imp_locations-06",
+    "name": "Sir H.N. Reliance Foundation Hospital",
+    "type": "imp_locations",
+    "city": "mumbai",
+    "lat": 19.0821,
+    "lng": 72.8835,
+    "address": "Fort, Mumbai 400001",
+    "gmaps_link": "https://maps.google.com/?q=19.0821,72.8835",
+    "added_by": "claude-data-bot"
+  },
+  {
+    "id": "mum-imp_locations-07",
+    "name": "ICICI Bank - Andheri",
+    "type": "imp_locations",
+    "city": "mumbai",
+    "lat": 19.1197,
+    "lng": 72.8468,
+    "address": "Andheri East, Mumbai 400072",
+    "gmaps_link": "https://maps.google.com/?q=19.1197,72.8468",
+    "added_by": "claude-data-bot"
   },
   {
     "id": "thn-imp_locations-01",
-    "name": "Sample Passport Seva Kendra, Thane",
+    "name": "Passport Seva Kendra - Thane",
     "type": "imp_locations",
     "city": "thane",
     "lat": 19.1972,
     "lng": 72.9722,
-    "address": "Placeholder address, Thane West",
+    "address": "Thane West, Thane 400601",
     "gmaps_link": "https://maps.google.com/?q=19.1972,72.9722",
-    "added_by": "seed"
+    "added_by": "claude-data-bot"
+  },
+  {
+    "id": "thn-imp_locations-02",
+    "name": "Thane Head Post Office",
+    "type": "imp_locations",
+    "city": "thane",
+    "lat": 19.2183,
+    "lng": 72.9781,
+    "address": "Thane West, Thane 400601",
+    "gmaps_link": "https://maps.google.com/?q=19.2183,72.9781",
+    "added_by": "claude-data-bot"
+  },
+  {
+    "id": "nvm-imp_locations-01",
+    "name": "NMMC Hospital Vashi",
+    "type": "imp_locations",
+    "city": "navi_mumbai",
+    "lat": 19.0751,
+    "lng": 73.0024,
+    "address": "Sector 10A, Vashi, Navi Mumbai 400703",
+    "gmaps_link": "https://maps.google.com/?q=19.0751,73.0024",
+    "added_by": "claude-data-bot"
   }
 ]

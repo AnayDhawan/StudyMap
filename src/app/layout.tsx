@@ -8,6 +8,7 @@ import { Navbar } from "@/components/layout/navbar";
 import { Footer } from "@/components/layout/footer";
 import { Toaster } from "@/components/ui/sonner";
 import { PwaRegister } from "@/components/pwa-register";
+import { Analytics } from "@/components/analytics";
 import { cn } from "@/lib/utils";
 
 export const metadata: Metadata = {
@@ -68,6 +69,7 @@ export default function RootLayout({
           <Toaster richColors position="top-center" />
           <PwaRegister />
         </ThemeProvider>
+        <Analytics />
       </body>
     </html>
   );
