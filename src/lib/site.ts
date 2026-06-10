@@ -9,6 +9,6 @@ export const site = {
 export const navLinks = [
   { href: "/map", label: "Map" },
   { href: "/resources", label: "Resources" },
-  { href: "/benefits", label: "Student Docs" },
+  { href: "/student-docs", label: "Student Docs" },
   { href: "/account", label: "Account" },
 ] as const;

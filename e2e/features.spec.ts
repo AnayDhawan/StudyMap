@@ -71,14 +71,14 @@ test.describe('Resources Page', () => {
 
 test.describe('Benefits Page', () => {
   test('benefits page loads with guides', async ({ page }) => {
-    await page.goto('/benefits');
+    await page.goto('/student-docs');
     // Page should have at least the existing guides
     const content = page.locator('main');
     await expect(content).not.toBeEmpty({ timeout: 3000 });
   });
 
   test('new guides visible (if added)', async ({ page }) => {
-    await page.goto('/benefits');
+    await page.goto('/student-docs');
     const guideCheck = async (title: string) => {
       const link = page.locator(`a:has-text("${title}"), h2:has-text("${title}"), h3:has-text("${title}")`);
       const isVisible = await link.isVisible({ timeout: 1000 }).catch(() => false);

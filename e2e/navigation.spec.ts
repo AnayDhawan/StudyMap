@@ -12,7 +12,7 @@ test.describe('Navigation & Page Render', () => {
     const navbar = page.locator('header nav');
     await expect(navbar.locator('a[href="/map"]')).toBeVisible();
     await expect(navbar.locator('a[href="/resources"]')).toBeVisible();
-    await expect(navbar.locator('a[href="/benefits"]')).toBeVisible();
+    await expect(navbar.locator('a[href="/student-docs"]')).toBeVisible();
     await expect(navbar.locator('a[href="/account"]')).toBeVisible();
   });
 
@@ -27,9 +27,9 @@ test.describe('Navigation & Page Render', () => {
     await expect(page).toHaveTitle(/resources/i);
   });
 
-  test('navigate to /benefits page', async ({ page }) => {
-    await page.goto('/benefits');
-    await expect(page).toHaveTitle(/benefits|student docs/i);
+  test('navigate to /student-docs page', async ({ page }) => {
+    await page.goto('/student-docs');
+    await expect(page).toHaveTitle(/student-docs|student docs/i);
   });
 
   test('navigate to /account page', async ({ page }) => {

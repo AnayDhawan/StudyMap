@@ -132,7 +132,7 @@ test.describe('UI Elements', () => {
   });
 
   test('footer renders on all pages', async ({ page }) => {
-    const pages = ['/', '/map', '/resources', '/benefits', '/account'];
+    const pages = ['/', '/map', '/resources', '/student-docs', '/account'];
 
     for (const pagePath of pages) {
       await page.goto(pagePath);
