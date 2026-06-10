@@ -1,24 +1,35 @@
 [
   {
-    "id": "mum-airport-01",
-    "name": "Chhatrapati Shivaji Maharaj International Airport",
+    "id": "mum-airport-terminal-01",
+    "name": "Chhatrapati Shivaji Maharaj International Airport Terminal 1",
     "type": "airport",
     "city": "mumbai",
-    "lat": 19.0896,
-    "lng": 72.8656,
-    "address": "Andheri East, Mumbai",
-    "gmaps_link": "https://maps.google.com/?q=19.0896,72.8656",
-    "added_by": "seed"
+    "lat": 19.093284151330796,
+    "lng": 72.85722798050381,
+    "address": "Terminal 1, Santacruz East, Mumbai",
+    "gmaps_link": "https://maps.google.com/?q=19.093284151330796,72.85722798050381",
+    "added_by": "thunderrblitzyt-eng"
+  },
+  {
+    "id": "mum-airport-terminal-02",
+    "name": "Chhatrapati Shivaji Maharaj International Airport Terminal 2",
+    "type": "airport",
+    "city": "mumbai",
+    "lat": 19.09771239969778,
+    "lng": 72.87453616637048,
+    "address": "Terminal 2, Sahar, Andheri East, Mumbai",
+    "gmaps_link": "https://maps.google.com/?q=19.09771239969778,72.87453616637048",
+    "added_by": "thunderrblitzyt-eng"
   },
   {
     "id": "nvm-airport-01",
     "name": "Navi Mumbai International Airport",
     "type": "airport",
     "city": "navi_mumbai",
-    "lat": 19.0617,
-    "lng": 73.0782,
+    "lat": 18.99235692273755,
+    "lng": 73.06245312081825,
     "address": "Ulwe, Navi Mumbai",
-    "gmaps_link": "https://maps.google.com/?q=19.0617,73.0782",
-    "added_by": "seed"
+    "gmaps_link": "https://maps.google.com/?q=18.99235692273755,73.06245312081825",
+    "added_by": "thunderrblitzyt-eng"
   }
 ]
