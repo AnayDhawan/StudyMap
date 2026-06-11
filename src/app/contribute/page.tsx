@@ -90,42 +90,6 @@ export default function ContributePage() {
           </CardContent>
         </Card>
 
-        {/* Improve documentation */}
-        <Card>
-          <CardHeader>
-            <CardTitle className="flex items-center gap-2">
-              <Code className="size-5" />
-              Improve guides and documentation
-            </CardTitle>
-            <CardDescription>Help write or edit Student Docs guides, fix typos, or improve explanations</CardDescription>
-          </CardHeader>
-          <CardContent className="space-y-4">
-            <div className="space-y-3">
-              <p className="text-sm text-foreground/80">
-                Guides live in <code className="rounded bg-muted px-1.5 py-0.5 font-mono">content/benefits/</code> as Markdown files. To contribute:
-              </p>
-              <ol className="ml-4 list-inside list-decimal space-y-2 text-sm text-foreground/80">
-                <li>Fork the repository</li>
-                <li>Edit or create a guide file</li>
-                <li>Ensure links are current and information is accurate</li>
-                <li>Submit a pull request with your improvements</li>
-              </ol>
-              <p className="text-xs text-muted-foreground">
-                Good guides are clear, actionable, and current. They include real links and step-by-step instructions.
-              </p>
-            </div>
-            <a
-              href={`${site.repo}/tree/main/content/benefits`}
-              target="_blank"
-              rel="noreferrer"
-              className="inline-flex items-center gap-1.5 text-sm font-medium text-primary hover:underline"
-            >
-              View guides
-              <ArrowRight className="size-4" />
-            </a>
-          </CardContent>
-        </Card>
-
         {/* Questions */}
         <Card>
           <CardHeader>
@@ -135,10 +99,10 @@ export default function ContributePage() {
           <CardContent>
             <p className="text-sm text-foreground/80">
               Email{" "}
-              <a href="mailto:anay@studymap.dev" className="font-medium text-primary hover:underline">
-                anay@studymap.dev
+              <a href="mailto:dhawansanay@gmail.com" className="font-medium text-primary hover:underline">
+                dhawansanay@gmail.com
               </a>{" "}
-              or open a GitHub discussion. We are happy to help.
+              or open a GitHub discussion.
             </p>
           </CardContent>
         </Card>

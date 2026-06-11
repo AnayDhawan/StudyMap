@@ -183,8 +183,13 @@
 html { scroll-behavior: smooth; }
 
 ::selection {
-  background-color: rgba(245, 158, 11, 0.25);
-  color: #fff;
+  background-color: rgba(120, 53, 15, 0.25);
+  color: inherit;
+}
+
+.dark ::selection {
+  background-color: rgba(245, 158, 11, 0.3);
+  color: inherit;
 }
 
 ::-webkit-scrollbar              { width: 6px; }
