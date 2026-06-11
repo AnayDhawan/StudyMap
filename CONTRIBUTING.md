@@ -1,37 +1,27 @@
 # Contributing to StudyMap
 
-Thanks for helping students find their way around. The most useful thing you can
-add is a real, verified place. Everything here works on localhost with no setup,
-so you can see your change before you open a pull request.
+Thanks for helping students find their way around. The most useful contribution is a real, verified place. Everything works on localhost with no setup, so you can preview your change before opening a pull request.
 
 ## Ways to contribute
 
-- **Add a public place** (library, exam centre, book depot, and so on).
-- **Add or fix a benefit guide** (free software, travel, paperwork, perks).
-- **Add a resource link** (a board's past papers or registration portal).
-- **Fix code or docs.**
+- **Add a public place** (library, exam centre, book shop, stationery, and so on)
+- **Fix incorrect data** (wrong coordinates, outdated name, broken link)
+- **Fix code or docs**
 
-The fastest path for places and benefits is the issue forms under
-**New issue**: they ask for everything a reviewer needs. A maintainer turns an
-accepted issue into a pull request, or you can open the PR yourself.
+## Quality gate for places
 
-## The quality gate for public places
+Public places live in the repo as JSON and must be trustworthy. Before a place is merged it must clear this gate, with proof shown in the PR:
 
-Public places live in the repo as JSON, so they have to be trustworthy. Before a
-place is merged it must clear this gate, with the proof shown in the PR:
+- A **source or citation** showing the place is real and reputable
+- A **Google Maps rating of 4.0 or higher**
+- **50 or more Google Maps reviews**
+- A **date you verified** the place and its coordinates
 
-- A **source or citation** that shows the place is real and reputable.
-- A **Google Maps rating of 4.0 or higher.**
-- **50 or more Google Maps reviews.**
-- A **date you verified** the place and its coordinates.
-
-The proof lives in the pull request, never in the committed data.
+Proof goes in the pull request, never in the committed JSON.
 
 ## The place record
 
-Each place is one object inside `data/places/<type>.json` (one file per type, so
-adding a city never touches existing files). The committed record stops at
-`gmaps_link` and `added_by`:
+Each place is one object inside `data/places/<type>.json`. Valid types: `book_shop`, `library`, `exam_centre`, `imp_locations`, `stationery`, `internet_cafe`, `airport`, `train_station`.
 
 ```json
 {
@@ -41,34 +31,20 @@ adding a city never touches existing files). The committed record stops at
   "city": "mumbai",
   "lat": 19.0176,
   "lng": 72.8562,
-  "address": "Optional, short and human readable",
+  "address": "Optional, short and human-readable",
   "gmaps_link": "https://maps.app.goo.gl/...",
-  "added_by": "your-handle"
+  "added_by": "your-github-handle"
 }
 ```
 
-- `type` is one of: `book_shop`, `library`, `exam_centre`, `imp_locations`,
-  `stationery`, `internet_cafe`, `airport`, `train_station`.
-- `city` is one of: `mumbai`, `thane`, `navi_mumbai`.
-- `id` is `<city-prefix>-<type>-<number>` and must be unique within its file.
-- Do **not** add rating, review count, citation, or verified date to the JSON.
-  Those go in the PR.
-
-## Places and resources
-
-For a full walkthrough with field-by-field notes, commit format examples, and the quality gate checklist, see [`data/CONTRIBUTING.md`](data/CONTRIBUTING.md).
-
-In short:
-- Places go in `data/places/<type>.json` — one object per place, coordinates from Google Maps.
-- Resources are outbound links only (`data/resources/<board>.json`). Boards in scope: IB, IGCSE, SAT. `url` must point to an official source; the site never hosts files.
-
-## Benefit guides
-
-Benefit guides are MDX files in `content/benefits/`. Add a file with frontmatter
-(`title`, `summary`, `order`) and keep the steps tied to official sources.
+- `city` is one of: `mumbai`, `thane`, `navi_mumbai`
+- `id` format: `<city-prefix>-<type>-<number>`, unique within the file
+- Coordinates: `lat` 18-20, `lng` 72-73 (Mumbai Metropolitan Region)
+- Do not add rating, review count, or verified date to the JSON. Those go in the PR.
 
 ## House rules
 
-- Conventional commit messages, one logical change per commit.
-- No em dashes in any copy.
-- Run `npm run dev` and check your change on localhost before opening a PR.
+- Conventional commit messages, one logical change per commit
+- No em dashes in any copy
+- Run `npm run dev` and verify your change on localhost before opening a PR
+- Questions: open an issue or email [dhawansanay@gmail.com](mailto:dhawansanay@gmail.com)

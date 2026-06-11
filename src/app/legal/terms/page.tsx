@@ -13,7 +13,7 @@ export default function TermsPage() {
           <section>
             <h2 className="text-2xl font-semibold">Using StudyMap</h2>
             <p>
-              StudyMap is free to use. You can view, contribute places, and access resources without signing up.
+              StudyMap is free to use. You can view the map and contribute places without signing up.
             </p>
           </section>
 

@@ -49,30 +49,3 @@ export interface Place {
   added_by: string;
 }
 
-export const BOARDS = ["IB", "IGCSE", "SAT"] as const;
-
-export type Board = (typeof BOARDS)[number];
-
-export const RESOURCE_KINDS = ["past_paper", "website", "portal"] as const;
-
-export type ResourceKind = (typeof RESOURCE_KINDS)[number];
-
-export const RESOURCE_KIND_LABELS: Record<ResourceKind, string> = {
-  past_paper: "Past paper",
-  website: "Website",
-  portal: "Portal",
-};
-
-/**
- * A catalogue entry. The site never hosts files; `url` always points out to an
- * official board site, past-paper archive, or registration portal.
- */
-export interface Resource {
-  id: string;
-  board: Board;
-  subject?: string;
-  year?: number;
-  kind: ResourceKind;
-  title: string;
-  url: string;
-}

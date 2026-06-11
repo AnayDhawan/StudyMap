@@ -1,16 +1,17 @@
 # StudyMap
 
-A crowdsourced map of student-important places across the Mumbai Metropolitan Region (Mumbai, Thane, Navi Mumbai), with a past-paper catalogue and a student-benefits guide. Open source and self-hostable.
+A crowdsourced map of student-important places across the Mumbai Metropolitan Region (Mumbai, Thane, Navi Mumbai). Open source, zero setup, free forever.
 
-> This README is an early stub. A fuller version is on the way.
+**Live:** [studymap.vercel.app](https://studymap.vercel.app)  
+**Org:** migrating to [github.com/student-place](https://github.com/student-place)
+
+---
 
 ## What it does
 
-- **Places map:** find exam centres, libraries, book shops, important locations, internet cafes, stationery shops, train stations, and airports across the MMR. Filter by type and city.
-- **Resources:** curated links to past papers and official portals by board (IB, IGCSE, NEET, JEE, UPSC, SAT). The site never hosts files; it links out.
-- **Local papers:** keep your own question papers and syllabi in a local `papers/` folder and browse them offline on localhost.
-- **Benefits:** guides on claiming student perks, getting software free or discounted, travelling solo, and applying for a passport.
-- **Personal pins (optional):** sign in with Google to save private places (home, school, coaching) visible only to you.
+- **Places map** — find exam centres, libraries, book shops, stationery, internet cafes, train stations, and airports across the MMR. Filter by type and city.
+- **Contribute** — add places or fix data via GitHub pull request. No account needed.
+- **Legal** — privacy policy, terms of service, and data disclaimer for the crowdsourced dataset.
 
 ## Quick start
 
@@ -19,27 +20,88 @@ npm install
 npm run dev
 ```
 
-Open http://localhost:3000. The map, resources, papers, and benefits all work with no setup. Sign-in and personal pins are optional and only activate when Supabase environment variables are present (see `.env.example`).
+Open http://localhost:3000. No environment variables needed — the map reads place data directly from `data/places/`.
 
-## Run your own city
+## Data schema
 
-StudyMap ships pre-loaded for the Mumbai Metropolitan Region, but the data layer is plain JSON, so any city works.
+Places live in `data/places/<type>.json`, one file per category:
 
-1. **Localhost (default):** `npm install && npm run dev`. The map, resources, papers, and benefits all run with zero environment variables, reading place and resource data straight from `data/`.
-2. **Add your own places:** drop records into `data/places/<type>.json` (one file per category, see `src/lib/types.ts` for the `PlaceType` union and record shape) or open a PR following the gate in `CONTRIBUTING.md`.
-3. **Enable sign-in and personal pins (optional):** create a Supabase project, run the migration in `supabase/migrations/`, and copy `.env.example` to `.env.local` with your project URL and anon key. Full walkthrough in `supabase/README.md`. Without these set, the account UI stays hidden and the rest of the site is unaffected.
-4. **Local papers:** drop files into `papers/<board>/` (gitignored, see `papers/README.md`); they show up at `/papers` on localhost only.
-5. **Deploy:** push to your fork and import it on Vercel. No environment variables are required for a working deploy; add the Supabase ones later to turn on accounts.
-6. **Analytics (optional):** set `NEXT_PUBLIC_UMAMI_WEBSITE_ID` to the Website ID from your [Umami Cloud](https://cloud.umami.is) site (or self-host and also set `NEXT_PUBLIC_UMAMI_SRC`). The tracking script loads only in production builds; local and preview builds send nothing. Umami is cookieless and privacy-friendly.
+| File | Type key |
+|------|----------|
+| `airport.json` | `airport` |
+| `train_station.json` | `train_station` |
+| `exam_centre.json` | `exam_centre` |
+| `library.json` | `library` |
+| `book_shop.json` | `book_shop` |
+| `stationery.json` | `stationery` |
+| `internet_cafe.json` | `internet_cafe` |
+| `imp_locations.json` | `imp_locations` |
 
-## Tech
+Each record shape (`src/lib/types.ts`):
 
-Next.js (App Router) + TypeScript + Tailwind + shadcn/ui + Leaflet (OpenStreetMap) + Supabase (auth and private pins only).
+```ts
+{
+  id: string;          // kebab-case, unique across all types
+  name: string;
+  type: PlaceType;     // one of the 8 keys above
+  city: "mumbai" | "thane" | "navi_mumbai";
+  lat: number;
+  lng: number;
+  address?: string;
+  gmaps_link: string;  // must contain "maps.google.com"
+  added_by: string;    // GitHub username of contributor
+}
+```
+
+## How to add a place
+
+1. Fork this repo
+2. Add your place to the correct `data/places/<type>.json`
+3. Verify `lat`/`lng` against Google Maps; `lat` 18–20, `lng` 72–73
+4. Set `gmaps_link` to the Google Maps link
+5. Open a pull request with a description of the place and a source
+
+See [CONTRIBUTING.md](CONTRIBUTING.md) for full guidelines.
+
+## Architecture
+
+```
+src/
+  app/
+    page.tsx            # homepage (hero + map preview)
+    map/page.tsx        # full interactive map
+    contribute/page.tsx # contribution guide
+    legal/              # privacy, terms, disclaimer
+    layout.tsx          # root layout (navbar, footer, theme)
+  components/
+    home/               # Hero, MapPreview
+    map/                # PlacesMap, MapView, FilterPanel, NearMeButton
+    pins/               # PinPopup
+    layout/             # Navbar, Footer
+  lib/
+    places.ts           # getPlaces(), filterPlaces(), city loader
+    geo.ts              # distance calculation, LatLng type
+    types.ts            # PlaceType, City, Place interface
+    map.ts              # PLACE_TYPE_COLORS, directionsUrl
+    share.ts            # URL state encode/decode for shareable links
+    site.ts             # site metadata, navLinks
+data/
+  places/               # 8 JSON files, one per place type
+e2e/                    # Playwright tests (chromium, firefox, Mobile Chrome)
+```
+
+## Tech stack
+
+- **Next.js 16** (App Router, static export)
+- **Leaflet + react-leaflet** (interactive map)
+- **shadcn/ui + Tailwind v4** (UI components)
+- **next-themes** (dark/light mode)
+- **Playwright** (E2E tests)
 
 ## Contributing
 
-See `CONTRIBUTING.md`. Public places are submitted through GitHub with a citation and a quality check.
+See [CONTRIBUTING.md](CONTRIBUTING.md).
 
 ## License
 
-See `LICENSE`.
+MIT. See [LICENSE](LICENSE).

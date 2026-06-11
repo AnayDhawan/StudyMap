@@ -48,8 +48,7 @@
   --sm-info-border:            #BFDBFE;
 
   /* Map marker hex — color-blind safe, verified against deuteranopia,
-     protanopia, tritanopia. Pin grammar: public = filled teardrop,
-     private = dashed diamond at 50% fill (see PERSONAL_PIN_COLOR in lib/map.ts). */
+     protanopia, tritanopia. */
   --marker-stationery:         #D97706;
   --marker-library:            #2563EB;
   --marker-exam-centre:        #7C3AED;
