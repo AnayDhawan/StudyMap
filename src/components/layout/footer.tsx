@@ -5,8 +5,6 @@ import { site } from "@/lib/site";
 
 const quickLinks = [
   { href: "/map", label: "Map" },
-  { href: "/resources", label: "Resources" },
-  { href: "/student-docs", label: "Student Docs" },
   { href: "/contribute", label: "Contribute" },
 ];
 
