@@ -1,16 +1,5 @@
 [
   {
-    "id": "mum-exam_centre-01",
-    "name": "CP Goenka International School",
-    "type": "exam_centre",
-    "city": "mumbai",
-    "lat": 19.1642,
-    "lng": 72.8306,
-    "address": "12/B, Sector 1, Kala Ghoda, Fort, Mumbai 400001",
-    "gmaps_link": "https://maps.google.com/?q=19.1642,72.8306",
-    "added_by": "anaydhawan"
-  },
-  {
     "id": "mum-exam_centre-02",
     "name": "Oberoi International School",
     "type": "exam_centre",

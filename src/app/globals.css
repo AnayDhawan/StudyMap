@@ -277,10 +277,11 @@ html { scroll-behavior: smooth; }
    Leaflet theming — popups, controls, attribution follow app theme
    ================================================================ */
 
+/* Popup always uses light/white theme — legible on any map background */
 .leaflet-popup-content-wrapper {
-  background: var(--popover);
-  color: var(--popover-foreground);
-  border: 1px solid var(--border);
+  background: #ffffff;
+  color: #111827;
+  border: 1px solid #e5e7eb;
   border-radius: var(--radius-lg);
   box-shadow: 0 12px 32px -8px rgba(0, 0, 0, 0.25);
   padding: 0;
@@ -290,39 +291,47 @@ html { scroll-behavior: smooth; }
   margin: 14px 16px;
   font-family: var(--font-sans);
   line-height: 1.4;
+  color: #111827;
 }
 
 .leaflet-popup-tip {
-  background: var(--popover);
-  border: 1px solid var(--border);
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
   box-shadow: none;
 }
 
-/* Hyperlinks inside popups are always white (they sit on primary buttons) */
-.leaflet-popup-content a {
-  color: #ffffff;
+/* Force Tailwind dark-mode color utilities to use light values inside popups */
+.leaflet-popup-content .text-foreground       { color: #111827 !important; }
+.leaflet-popup-content .text-muted-foreground { color: #6b7280 !important; }
+.leaflet-popup-content .bg-muted             { background-color: #f3f4f6 !important; }
+
+/* Share button always light inside popup */
+.leaflet-popup-content button {
+  background-color: #ffffff !important;
+  border-color: #d1d5db !important;
+  color: #6b7280 !important;
+}
+.leaflet-popup-content button:hover {
+  background-color: #f9fafb !important;
+  color: #111827 !important;
 }
 
-/* Popup CTA button: amber-700 in BOTH modes so white text keeps ≥4.5:1
-   contrast (dark-mode --primary amber-500 fails with white). */
+/* Directions CTA: amber-700 background, white text (WCAG 4.5:1) */
 .leaflet-popup-content a.popup-cta {
   background-color: #b45309;
+  color: #ffffff !important;
 }
-.leaflet-popup-content a.popup-cta:hover {
-  background-color: #92400e;
-}
-.leaflet-popup-content a.popup-cta:active {
-  background-color: #78350f;
-}
+.leaflet-popup-content a.popup-cta:hover  { background-color: #92400e; }
+.leaflet-popup-content a.popup-cta:active { background-color: #78350f; }
 
 .leaflet-container a.leaflet-popup-close-button {
-  color: var(--muted-foreground);
+  color: #6b7280;
   font-size: 18px;
   padding: 6px 8px 0 0;
   transition: color 0.15s ease;
 }
 .leaflet-container a.leaflet-popup-close-button:hover {
-  color: var(--foreground);
+  color: #111827;
 }
 
 /* Zoom controls match cards */
