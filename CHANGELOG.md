@@ -39,10 +39,6 @@ First public release.
 - Stale design-system HTML from the repo root (moved to `docs/`).
 - Stray local files that should never have been tracked.
 
-### Security
-
-- Removed accidentally committed SSH key files from the working tree.
-
 ## [0.1.0] - 2026-06-08
 
 Internal milestone: Places-only scope.
