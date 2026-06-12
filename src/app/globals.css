@@ -279,9 +279,9 @@ html { scroll-behavior: smooth; }
 
 /* Popup follows app theme (light/dark) via CSS vars */
 .leaflet-popup-content-wrapper {
-  background: var(--popover);
-  color: var(--popover-foreground);
-  border: 1px solid var(--border);
+  background: var(--popover) !important;
+  color: var(--popover-foreground) !important;
+  border: 1px solid var(--border) !important;
   border-radius: var(--radius-lg);
   box-shadow: 0 12px 32px -8px rgba(0, 0, 0, 0.25);
   padding: 0;
@@ -291,11 +291,11 @@ html { scroll-behavior: smooth; }
   margin: 14px 16px;
   font-family: var(--font-sans);
   line-height: 1.4;
-  color: var(--popover-foreground);
+  color: var(--popover-foreground) !important;
 }
 
 .leaflet-popup-tip {
-  background: var(--popover);
+  background: var(--popover) !important;
   border: 1px solid var(--border);
   box-shadow: none;
 }
