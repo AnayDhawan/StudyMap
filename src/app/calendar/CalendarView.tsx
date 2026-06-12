@@ -141,78 +141,8 @@ export function CalendarView() {
         ))}
       </div>
 
-      {/* Calendar grid */}
-      <div className="rounded-xl border border-border overflow-hidden">
-        {/* Day-of-week headers */}
-        <div className="grid grid-cols-7 bg-muted/40 border-b border-border">
-          {DAY_NAMES.map((d) => (
-            <div
-              key={d.long}
-              className="py-2.5 text-center text-xs font-semibold text-muted-foreground"
-            >
-              <span className="hidden sm:inline">{d.long}</span>
-              <span className="sm:hidden">{d.short}</span>
-            </div>
-          ))}
-        </div>
-
-        {/* Day cells */}
-        <div className="grid grid-cols-7">
-          {cells.map((day, i) => {
-            if (!day) {
-              return (
-                <div
-                  key={`empty-${i}`}
-                  className="aspect-square border-b border-r border-border bg-muted/10 last:border-r-0"
-                />
-              );
-            }
-
-            const colors = dayColors[day] ?? [];
-            const hasEvent = colors.length > 0;
-            const isToday = isThisMonth && today.getDate() === day;
-
-            return (
-              <div
-                key={day}
-                className={`aspect-square flex flex-col items-center justify-center gap-1 border-b border-r border-border last:border-r-0 transition-colors
-                  ${hasEvent && !isToday ? "bg-primary/5" : ""}
-                `}
-                title={
-                  hasEvent
-                    ? events
-                        .filter((ev) => getActiveDaysForEvent(ev, year, month).has(day))
-                        .map((ev) => ev.session)
-                        .join(", ")
-                    : undefined
-                }
-              >
-                <span
-                  className={`flex h-7 w-7 sm:h-8 sm:w-8 items-center justify-center rounded-full text-xs sm:text-sm font-medium
-                    ${isToday ? "bg-primary text-primary-foreground font-bold" : hasEvent ? "text-foreground" : "text-muted-foreground"}
-                  `}
-                >
-                  {day}
-                </span>
-                {hasEvent && (
-                  <div className="flex gap-0.5 justify-center">
-                    {colors.map((c, ci) => (
-                      <span
-                        key={ci}
-                        className="rounded-full"
-                        style={{ width: 4, height: 4, backgroundColor: c }}
-                      />
-                    ))}
-                  </div>
-                )}
-              </div>
-            );
-          })}
-        </div>
-      </div>
-
       {/* Events list for this month */}
-      <div className="mt-6">
+      <div className="mb-6">
         {events.length === 0 ? (
           <p className="rounded-lg border border-border py-8 text-center text-sm text-muted-foreground">
             No exams this month.
@@ -274,6 +204,81 @@ export function CalendarView() {
             ))}
           </div>
         )}
+      </div>
+
+      {/* Calendar grid */}
+      <div className="rounded-xl border border-border overflow-hidden">
+        {/* Day-of-week headers */}
+        <div className="grid grid-cols-7 bg-muted/40 border-b border-border">
+          {DAY_NAMES.map((d) => (
+            <div
+              key={d.long}
+              className="py-2.5 text-center text-xs font-semibold text-muted-foreground"
+            >
+              <span className="hidden sm:inline">{d.long}</span>
+              <span className="sm:hidden">{d.short}</span>
+            </div>
+          ))}
+        </div>
+
+        {/* Day cells */}
+        <div className="grid grid-cols-7">
+          {cells.map((day, i) => {
+            if (!day) {
+              return (
+                <div
+                  key={`empty-${i}`}
+                  className="aspect-square border-b border-r border-border bg-muted/10 last:border-r-0"
+                />
+              );
+            }
+
+            const colors = dayColors[day] ?? [];
+            const hasEvent = colors.length > 0;
+            const isToday = isThisMonth && today.getDate() === day;
+
+            return (
+              <div
+                key={day}
+                className={`aspect-square flex flex-col items-center justify-center gap-1 border-b border-r border-border last:border-r-0 transition-colors
+                  ${hasEvent && !isToday ? "bg-primary/5" : ""}
+                `}
+                title={
+                  hasEvent
+                    ? events
+                        .filter((ev) => getActiveDaysForEvent(ev, year, month).has(day))
+                        .map((ev) => ev.session)
+                        .join(", ")
+                    : undefined
+                }
+              >
+                <span
+                  className={`flex h-7 w-7 sm:h-8 sm:w-8 items-center justify-center rounded-full text-xs sm:text-sm font-medium
+                    ${isToday ? "bg-primary text-primary-foreground font-bold" : hasEvent ? "text-foreground" : "text-muted-foreground"}
+                  `}
+                >
+                  {day}
+                </span>
+                {isToday && (
+                  <span className="text-[9px] font-semibold text-primary leading-none">
+                    today
+                  </span>
+                )}
+                {hasEvent && (
+                  <div className="flex gap-0.5 justify-center">
+                    {colors.map((c, ci) => (
+                      <span
+                        key={ci}
+                        className="rounded-full"
+                        style={{ width: 4, height: 4, backgroundColor: c }}
+                      />
+                    ))}
+                  </div>
+                )}
+              </div>
+            );
+          })}
+        </div>
       </div>
     </div>
   );
