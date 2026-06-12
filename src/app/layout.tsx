@@ -64,7 +64,7 @@ export default function RootLayout({
           disableTransitionOnChange
         >
           <Navbar />
-          <main className="flex flex-1 flex-col">{children}</main>
+          <main className="flex flex-1 flex-col pt-14">{children}</main>
           <Footer />
           <Toaster richColors position="top-center" />
           <PwaRegister />

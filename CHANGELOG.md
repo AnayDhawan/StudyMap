@@ -5,6 +5,14 @@ All notable changes to StudyMap are documented here.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.0.1] - 2026-06-12
+
+### Changed
+
+- Calendar: events this month now appear above the calendar grid.
+- Calendar: today's date circle is labelled "today" below the number.
+- Navbar: changed from `sticky` to `fixed` so it stays visible while scrolling on the map page.
+
 ## [1.0.0] - 2026-06-11
 
 First public release.

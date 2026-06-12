@@ -19,7 +19,7 @@ export function Navbar() {
     href === "/" ? pathname === "/" : pathname.startsWith(href);
 
   return (
-    <header className="sticky top-0 z-40 w-full border-b bg-background">
+    <header className="fixed top-0 inset-x-0 z-40 w-full border-b bg-background">
       <div className="mx-auto flex h-14 max-w-6xl items-center gap-4 px-4">
         <Link href="/" className="flex items-center gap-2">
           {/* eslint-disable-next-line @next/next/no-img-element -- static SVG wordmark, no optimization needed */}
