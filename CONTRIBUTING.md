@@ -42,9 +42,27 @@ Each place is one object inside `data/places/<type>.json`. Valid types: `book_sh
 - Coordinates: `lat` 18-20, `lng` 72-73 (Mumbai Metropolitan Region)
 - Do not add rating, review count, or verified date to the JSON. Those go in the PR.
 
+## Commit message format
+
+Use [Conventional Commits](https://www.conventionalcommits.org/): `<type>: <short description>`.
+
+| Type | When to use |
+|------|-------------|
+| `feat` | New feature or place |
+| `fix` | Bug fix or incorrect data |
+| `chore` | Maintenance, deps, config |
+| `refactor` | Code restructure, no behavior change |
+| `docs` | Docs only |
+| `style` | Formatting, whitespace |
+| `test` | Adding or fixing tests |
+| `perf` | Performance improvement |
+| `ci` | CI/CD changes |
+| `revert` | Reverts a previous commit |
+
+Optional scope in parens: `feat(calendar): add today label`. One logical change per commit.
+
 ## House rules
 
-- Conventional commit messages, one logical change per commit
 - No em dashes in any copy
 - Run `npm run dev` and verify your change on localhost before opening a PR
 - Questions: open an issue or email [dhawansanay@gmail.com](mailto:dhawansanay@gmail.com)
